@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum8.4</title>
+</head>
+<style>
+    *{box-sizing: border-box;}
+body{display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+}
+#container{
+    display: flex;
+    flex: 1;
+}
+#container>nav{
+    background: aquamarine;
+    height: 350px;
+    width: 150px;
+    text-align: center;
+}
+#main>header,footer{
+background: yellow;
+width: 550px;
+height: 8vh;
+}
+.container{
+    display: flex;
+    flex: 1;
+}
+.container>article{
+    width: 400px;
+    height: 254px;
+    text-align: center;
+}
+.container>aside{
+    background: aquamarine;
+    width: 150px;
+    text-align: center;
+}
+
+</style>
+<body>
+ <div id="container">
+        <nav>nav</nav>
+       <div id="main">
+            <header>Header</header>   
+            <div class="container">
+               <article>article</article>    
+               <aside>aside</aside>
+           </div>
+          <footer>footer</footer>
+       </div>
+    </div>
+</body>
+</html>

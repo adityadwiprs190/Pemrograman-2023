@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ubah warna javascript</title>
+</head>
+<body id="body">
+    <button onclick="ubahwarna()" >ubah warna</button>
+    <script>
+        function ubahwarna (){
+            let body = document.getElementById ('body');
+            let random =Math.round(Math.random()* 10);
+            console.log(random);
+
+            let colors = ['red', 'blue', 'beige', 'green', 'yellow', 'magenta', 'brown', 'aquamarine', 'white smoke', 'brown' ]
+            body.style ='background-color :' +  colors [ random];
+        }
+    </script>
+</body>
+</html>

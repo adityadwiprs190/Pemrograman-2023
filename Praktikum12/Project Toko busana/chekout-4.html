@@ -1,0 +1,329 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chekout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="w-100" style="position: fixed;top:0%;transition:0,5;z-index:50;">
+        <nav class="navbar navbar-expand-lg bg-secondary "  data-bs-theme="dark">
+          <nav class="navbar bg-body-none p-0">
+            <div class="container">
+              <a class="navbar-brand" href="tokobusana.html">
+                <img src="image/logo.png" alt="Bootstrap" width="80" height="max-content">
+              </a>
+            </div>
+          </nav>
+            <div class="container-fluid text-body-light" >
+              <a class="navbar-brand" href="allproduk.html">All Produk</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="aboutus.html">aboutus</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">contact us</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Hot Deal</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="false" href="official.html">Official Offline Store</a>
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+                <div class="d-flex p-2 mb-3">
+                      <svg xmlns="asset/cart3.svg" type="button" width="56" height="56" fill="currentColor" class="bi bi-cart3 p-3" viewBox="0 0 16 16" style="color: white;">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                      </svg>
+                  <svg xmlns="asset/bell.svg" type="button" width="56" height="56" fill="currentColor" class="bi bi-bell p-3" viewBox="0 0 16 16" style="color: white;">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                  </svg>
+                  <svg xmlns="asset/chat.svg"  type="button"  width="56" height="56" fill="currentColor" class="bi bi-chat-left-text p-3" viewBox="0 0 16 16" style="color: white;">
+                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                    <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                  </svg>   
+                  <div class="collapse navbar-collapse me-1" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item dropstart">
+                        <button class="btn btn-outline-primary dropdown-toggler" type="button" data-bs-toggle="dropdown">
+                        Daftar      
+                      </button>
+                      <div class="dropdown-menu">
+                        <form class="px-4 py-3">
+                          <div class="mb-2">
+                            <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                          </div>
+                          <div class="mb-2">
+                            <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                          </div>
+                          <div class="mb-2">
+                            <label for="exampleDropdownFormAlamat1" class="form-label">Alamat</label>
+                            <input type="text" class="form-control" id="exampleDropdownFormPassword1" placeholder="Masukan Alamat">
+                          </div>
+                          <div class="mb-2">
+                            <label for="exampleDropdownFormNomoetelepo1" class="form-label">Nomor Telepon</label>
+                            <input type="number" class="form-control" id="exampleDropdownFormPassword1" placeholder="Masukan Nomor">
+                          </div>
+                          <div class="mb-2">
+                            <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                              <label class="form-check-label" for="dropdownCheck">
+                                Apakah Anda Yakin?
+                              </label>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Daftar</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Login akun sudah ada? Sign up</a>
+                      </div>
+                     </ul>           
+                  </div>
+                  <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item dropstart">
+                        <button class="btn btn-primary dropdown-toggler" type="button" data-bs-toggle="dropdown">
+                          Login      
+                      </button>
+                      <div class="dropdown-menu">
+                        <form class="px-4 py-3">
+                          <div class="mb-2">
+                            <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Email">
+                          </div>
+                          <div class="mb-2">
+                            <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                          </div>
+                          <div class="mb-2">
+                            <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                              <label class="form-check-label" for="dropdownCheck">
+                                Ini Adalah Saya
+                              </label>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Sign in</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Lupa password? Ganti password</a>
+                      </div>
+                     </ul>                            
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+       </div>
+       <div style="margin-top: 150px;padding:5px 0 0 0;">
+        <div class="card mb-3" style="max-width:1220px;margin:auto;height:max-content;border:none;background-color:whitesmoke;box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="image/produk4.webp" class="img-fluid  rounded" alt="...">
+                <div class="col-md-6">
+                    <div class="card-body d-flex">
+                        <svg xmlns="asset/share.svg" width="25" height="25" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                            <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"/>
+                          </svg>
+                          <p class="card-text fw-semibold  ms-2">Share</p>
+                          <svg xmlns="asset/heart.svg" width="25" height="25" fill="currentColor" class="bi bi-heart ms-3 " viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                          </svg>
+                          <p class="card-text fw-semibold  ms-2">Favorite</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title"> Kemeja Wanita Lengan Panjang | Kemeja Muslim </h3>
+                  <p class="card-text"><small class="text-body-secondary fw-semibold">4.5 | Review | Terjual 977</small></p>
+                  <h1 class="card-title">Rp 294.000</h1>
+                  <p class="card-text"><small class="text-body-secondary fw-semibold text-decoration-line-through"> Rp 355.000</small></p>
+                  <p class="card-title fw-bold fs-5">Pilih Size</p>
+                  <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" >
+                  <label class="btn" for="option5">XL</label>
+                  <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off" >
+                  <label class="btn" for="option6">L</label>
+                  <input type="radio" class="btn-check" name="options-base" id="option7" autocomplete="off" >
+                  <label class="btn" for="option7">M</label>
+                  <input type="radio" class="btn-check" name="options-base" id="option8" autocomplete="off" >
+                  <label class="btn" for="option8">S</label>
+                  <p class="card-title fw-bold fs-5">Pilih Warna</p>
+                  <input type="radio" class="btn-check" name="options" id="option9" autocomplete="off" >
+                  <label class="btn text-decoration-line-through" for="option9">Coklat</label>
+                  <input type="radio" class="btn-check" name="options" id="option10" autocomplete="off" >
+                  <label class="btn" for="option10">Navi</label>
+                  <input type="radio" class="btn-check" name="options" id="option11" autocomplete="off" >
+                  <label class="btn" for="option11">Biru</label>
+                  <input type="radio" class="btn-check" name="options" id="option12" autocomplete="off" >
+                  <label class="btn text-decoration-line-through" for="option12">Hijau</label>
+                  <div class="col-md-8 mt-4">
+                        <button type="button" class="btn btn-outline-secondary">Masukan Keranjang</button>
+                        <button type="button" class="btn btn-primary">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="max-width:1220px;margin:auto;height:max-content;border:none;font-size:small;background-color:whitesmoke;box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Spesifikasi Produk</h5>
+              <p class=" card-text fw-semibold">Bahan :-</p>
+              <p class=" card-text fw-semibold">Warna :-</p>
+              <h5 class="card-title fw-bold">Deskripsi Produk</h5>
+              <p class=" card-text fw-semibold fw-semibold text-body-secondary">Kategori: Exclusive</p>
+              <p class=" card-text fw-semibold">Kemeja Wanita Muslim</p>
+              <p class=" card-text fw-semibold">Detail Unik :</p>
+                <p class=" card-text fw-semibold">- Kemeja Buat Kondangan</p>
+                <p class=" card-text fw-semibold">- Kemeja Buat Lebaran</p>
+                <p class=" card-text fw-semibold">- Bisa di gunakan pada saat acara tertentu</p>
+                <p class=" card-text fw-semibold">- Kemeja untuk anak 18 tahun keatas</p>
+                <p class=" card-text fw-semibold">Detail Produk :</p>
+                <p class=" card-text fw-semibold">- Original</p>
+                <p class=" card-text fw-semibold">- Mempunyai Logo </p>
+                <p class=" card-text fw-semibold">Detail Bahan :</p>
+                <p class=" card-text fw-semibold">- Kualitas Terbaik </p>
+                <p class=" card-text fw-semibold">*Warna Pada Gambar tidak seutuhnya sama ya,hal ini dikarenakan cahaya pada saat pengambilan gambar atau jenis media yang kamu gunakan.</p>
+                <a href="" class=" text-decoration-none position-absolute top-100 start-50 translate-middle"><p class=" card-text fw-bold">Lihat Lebih Banyak</p></a>
+            </div>
+        </div>
+        <div class="card mt-4" style="max-width:1220px;margin:auto;height:max-content;border:none;font-size:small;background-color:whitesmoke;padding:0 0 0 0 700px;box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);">
+          <div class="card-body ms">
+            <p class=" card-text fw-bold text-body-secondary fs-4">Review </p>
+            <div class="col-md-4 mt-3 d-flex ms-4">
+              <svg xmlns="asset/start-half.svg" width="56" height="56" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+              </svg>
+              <p class="card-text fw-semibold  ms-2 fs-3 mt-3">4.9</p>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body d-flex">
+                <img src="image/komen.jpg"  class="rounded-circle" width="56" height="56" alt="">
+                <div class="row">
+                  <p class="card-text fw-semibold  ms-2">Aditya Dwi P</p>
+                <div class=" ms-2 ">
+                  <svg xmlns="asset/start-fill.svg" width="12" height="12" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="asset/start-fill.svg" width="12" height="12" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="asset/start-fill.svg" width="12" height="12" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="asset/start-fill.svg" width="12" height="12" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="asset/start-half.svg" width="12" height="12" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                    <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                  </svg>
+                  <p class="card-text fw-semibold text-body-secondary"><small>| Varian : Navy-XL</small></p>
+                  <p class="card-text fw-semibold ">Model sangat bagus,Jahitan rapi,Pengiriman Cepat sangat worth it sekali.</p>
+                </div>
+                </div>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body d-flex">
+                  <img src="image/komen.jpg"  class="rounded-circle" width="56" height="56" alt="">
+                  <div class="row">
+                    <p class="card-text fw-semibold  ms-2">Aditya Dwi P</p>
+                  <div class=" ms-2 ">
+                    <svg xmlns="asset/start-fill.svg" width="12" height="12" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="asset/start-fill.svg" width="12" height="12" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="asset/start-fill.svg" width="12" height="12" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="asset/start-fill.svg" width="12" height="12" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="asset/start-half.svg" width="12" height="12" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                      <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                    </svg>
+                    <p class="card-text fw-semibold text-body-secondary"><small>| Varian : Navy-XL</small></p>
+                    <p class="card-text fw-semibold ">Model sangat bagus,Jahitan rapi,Pengiriman Cepat sangat worth it sekali.</p>
+                  </div>
+                  </div>
+                  <a href="" class=" text-decoration-none position-absolute top-100 start-50 translate-middle"><p class=" card-text fw-bold">Lihat Lebih Banyak</p></a>
+             </div>
+           </div>
+         </div>
+       </div>
+       <footer class=" mt-2" data-bs-theme="blue" style="font-size: smaller;">
+        <div class="container-fluid ">
+        <div class="row ">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="p-5 ">
+              <p class="fw-semibold fs-4" style="color: rgb(30, 147, 182);">THEO STORE</p>
+              <p class="fw-semibold text-body-secondary">Website ini memudahkan para customer untuk membeli produk dari luar kota</p>
+              <div class="icon ">
+             <a href=""><svg xmlns="asset/facebook.svg" width="30" height="30" fill="currentColor" class="bi bi-facebook me-2" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg></a>
+             <a href=""><svg xmlns="asset/instagram.svg" width="30" height="30" fill="currentColor" class="bi bi-instagram me-2" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg></a>
+             <a href=""><svg xmlns="asset/tiktok.svg" width="30" height="30" fill="currentColor" class="bi bi-tiktok me-2" viewBox="0 0 16 16">
+              <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+            </svg></a>
+            <a href=""><svg xmlns="asset/twitter-x.svg" width="30" height="30" fill="currentColor" class="bi bi-twitter-x me-2" viewBox="0 0 16 16">
+              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+            </svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 ">
+            <div class="p-5 ">
+              <p class="fw-semibold fs-4" style="color: rgb(30, 147, 182);">PERUSAHAAN</p>
+             <div> <a href="" class="navbar-brand fw-semibold text-body-secondary">Hubungi kami</a></div>
+              <div><a href="" class="navbar-brand fw-semibold text-body-secondary">Tentang Kami</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="p-5 ">
+              <p class="fw-semibold fs-4" style="color: rgb(30, 147, 182);">INFORMASI</p>
+             <div> <a href="" class="navbar-brand fw-semibold text-body-secondary">Produk Terbaru</a></div>
+             <div> <a href=""class="navbar-brand fw-semibold text-body-secondary">Potongan Harga</a></div>
+              <div><a href="" class="navbar-brand fw-semibold text-body-secondary">Review Customer</a></div>
+             <div> <a href="" class="navbar-brand fw-semibold text-body-secondary">Pembelian & Pengiriman</a></div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="p-5 ">
+              <p class="fw-semibold fs-4" style="color: rgb(30, 147, 182);">BANTUAN</p>
+                <div><a href="" class="navbar-brand fw-semibold text-body-secondary">Laporkan Penyalahgunaan</a></div>
+                <div><a href="" class="navbar-brand fw-semibold text-body-secondary">Blog</a></div>
+                <div><a href="" class="navbar-brand fw-semibold text-body-secondary">Chekout</a></div>
+                <div><a href="" class="navbar-brand fw-semibold text-body-secondary">COD</a></div>       
+            </div>
+          </div>
+        </div>
+        </div>  
+      </footer>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

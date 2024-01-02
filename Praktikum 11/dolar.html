@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Menghitung kurs Rupiah</h1>
+    <label for="dolar1">Nilai Dolar</label>
+    <input type="number" id="dolar1">
+    <button onclick="hitungrupiah()">Hitung</button>
+
+    <hr>
+    <p> Rupiah : <span id="jumlahrupiah"></span></p>
+
+    <script>
+        function hitungrupiah () {
+            let dolar1 = document.getElementById ('dolar1').value;
+            const Rupiah = 14650;
+            let jumlahrupiah = dolar1 * Rupiah ;
+            console.log =('Rupiah :' + jumlahrupiah);
+            let jumlahrupiah2 = document.getElementById ('jumlahrupiah');
+            jumlahrupiah2.innerHTML = jumlahrupiah
+        }
+    </script>
+</body>
+</html>

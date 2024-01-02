@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Selector</title>
+    <style>
+        #container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <label for="gambarpilih">Pilih Gambar:</label>
+    <select id="gambarpilih" onchange="imagepilihan()">
+        <option value="">Pilih Gambar</option>
+        <option value="Project Toko busana/image/gambar1.webp">Gambar 1</option>
+        <option value="Project Toko busana/image/gambar2.jpeg">Gambar 2</option>
+        <option value="Project Toko busana/image/gambar2.png">Gambar 3</option>
+        <option value="Project Toko busana/image/gambar3.jpeg">Gambar 4</option>
+        <option value="Project Toko busana/image/gambar5.jpg">Gambar 5</option>
+    </select>
+
+    <div id="container">
+        <img id="pilihgambar" style="max-width: 100%; max-height: 200px;">
+    </div>
+
+    <script>
+        function imagepilihan() {
+            const dropdown = document.getElementById('gambarpilih');
+            const pilihgambar = document.getElementById('pilihgambar');
+            const pilihopsi = dropdown.options[dropdown.selectedIndex];
+            if (pilihopsi.value) {
+                pilihgambar.src = pilihopsi.value;
+                const fileName = pilihopsi.text;
+                alert('INI ADALAH : ' + fileName);
+            } else {
+                pilihgambar.src = '';
+                alert('Pilih gambar terlebih dahulu.');
+            }
+        }
+    </script>
+</body>
+</html>

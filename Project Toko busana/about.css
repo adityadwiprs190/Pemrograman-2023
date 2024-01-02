@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+
+  .card1{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left:10px;
+    width:70%;
+    height: 250px;
+    
+  }
+
+  .card2{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left:400px;
+    width:70%;
+    height: 250px;
+    
+  }
+
+  .article{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .article2{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container1{
+    width: 100%;
+    text-align: center;
+
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 950px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+
+    .container2{
+      width: 50%;
+      margin-right: 20px;
+    }
+
+    .card1{
+      width:95%;
+      margin-left: 0%;
+      display:flex
+    }
+   .image{
+    width: 300px;
+   }
+
+    .image2{
+      width: 250px;
+    }
+    .card2{
+      width: 95%;
+      margin-top:7px;
+      margin-left:0px;
+      display:flex
+    }
+
+    .article{
+      width: 100%;
+      font-size:x-small;
+    }
+    
+    .article2{
+      width:100%;
+      font-size:x-small;
+    }
+    
+    .about-section{
+      width: 100%;
+    
+    }
+   
+  }

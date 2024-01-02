@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program Biaya Parkir</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Program Parkir</h2>
+
+<table>
+  <tr>
+    <th>Jam Masuk</th>
+    <th>Jam Keluar</th>
+    <th>Lama Parkir (jam)</th>
+    <th>Biaya Parkir</th>
+  </tr>
+  <tr>
+    <td><input type="time" id="jamMasuk"></td>
+    <td><input type="time" id="jamKeluar"></td>
+    <td id="lamaParkir"></td>
+    <td id="biayaParkir"></td>
+  </tr>
+</table>
+
+<button onclick="hitungBiayaParkir()">Hitung Biaya Parkir</button>
+
+<script>
+  function hitungBiayaParkir() {
+    const biayaAwal = 3000;
+    const biayaTambahanPerJam = 1000;
+
+    // Mendapatkan nilai input dari pengguna
+    const jamMasukInput = document.getElementById('jamMasuk');
+    const jamKeluarInput = document.getElementById('jamKeluar');
+
+    const jamMasuk = new Date('2000-01-01T' + jamMasukInput.value + ':00');
+    const jamKeluar = new Date('2000-01-01T' + jamKeluarInput.value + ':00');
+
+    // Menghitung lama parkir dalam jam
+    const lamaParkir = Math.max(0, (jamKeluar - jamMasuk) / 3600000); // 1 jam = 3600000 milidetik
+
+    // Menghitung biaya parkir
+    let biayaTotal = 0;
+    if (lamaParkir <= 2) {
+      biayaTotal = biayaAwal;
+    } else {
+      biayaTotal = biayaAwal + (lamaParkir - 2) * biayaTambahanPerJam;
+    }
+
+    // Menampilkan hasil lama parkir dan biaya parkir
+    document.getElementById('lamaParkir').textContent = lamaParkir.toFixed(2);
+    document.getElementById('biayaParkir').textContent = biayaTotal.toLocaleString('id-ID') + ' rupiah';
+  }
+</script>
+
+</body>
+</html>

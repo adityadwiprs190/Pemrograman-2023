@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            height: 100vh;
+            background-color: whitesmoke;
+        }
+        
+        .container {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        
+        }
+        
+        .chatoutput {
+            height: 200px;
+            overflow-y: scroll;
+            padding: 10px;
+            background-color: whitesmoke;
+        }
+        
+        #pesan-input {
+            width: 60%;
+            padding: 8px;
+        }
+        
+        button {
+            width: 20%;
+            padding: 8px;
+            background-color:rgb(30, 147, 182) ;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chatoutput" id="pesanoutput"></div>
+        <input type="text" id="pesan-input" placeholder="Type your message...">
+        <button onclick="kirimpesan()">Kirim</button>
+    </div>
+
+    <script>
+        function kirimpesan() {
+            let pesanInput= document.getElementById('pesan-input');
+            let pesanOutput = document.getElementById('pesanoutput');
+        
+            let pesanbaru = document.createElement('div');
+            pesanbaru.className = '';
+            pesanbaru.textContent = ' : '  + pesanInput.value;
+        
+            pesanOutput.appendChild(pesanbaru);
+        
+            // Bersihkan input setelah mengirim pesan
+            pesanInput.value = '';
+        
+            // scroll ke bawah setiap kali ada pesan baru
+            pesanOutput.scrollTop = pesanOutput.scrollHeight;
+        }
+        
+    </script>
+</body>
+</html>

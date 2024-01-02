@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penjumlahan Bilangan</title>
+</head>
+<body>
+
+<h2>Penjumlahan Bilangan</h2>
+
+<label for="bilangan1"></label>
+<input type="number" id="bilangan1" onChange="hitungJumlah()">
+<br><p>+</p>
+<label for="bilangan2"></label>
+<input type="number" id="bilangan2" onChange="hitungJumlah()">
+<br><p>=</p>
+<label for="hasil"></label>
+<input type="text" id="hasil" readonly>
+
+<script>
+  function hitungJumlah() {
+    // Mendapatkan nilai input dari pengguna
+    const bilangan1Input = document.getElementById('bilangan1');
+    const bilangan2Input = document.getElementById('bilangan2');
+
+    // Mendapatkan nilai bilangan dari input
+    const bilangan1 = parseFloat(bilangan1Input.value) || 0; // Menggunakan 0 jika input tidak valid
+    const bilangan2 = parseFloat(bilangan2Input.value) || 0;
+
+    // Menghitung jumlah bilangan
+    const hasilJumlah = bilangan1 + bilangan2;
+
+    // Menampilkan hasil jumlah pada input dengan ID "hasil"
+    document.getElementById('hasil').value = hasilJumlah;
+  }
+</script>
+
+</body>
+</html>

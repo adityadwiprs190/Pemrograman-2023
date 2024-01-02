@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 50%;
+          margin-top: 20px;
+        }
+    
+        table, th, td {
+          border: 1px solid black;
+        }
+    
+        th, td {
+          padding: 10px;
+          text-align: center;
+        }
+      </style>
+</head>
+<body>
+    <h2>Kurs Rupiah</h2>
+
+    <table>
+        <tr>
+            <th>Masukan Nilai</th>
+            <th>Valas</th>
+            <th>Nilai Rupiah</th>
+        </tr>
+        <tr>
+            <td> <input type="number" id="masukannilai" onchange="hasilrupiah()"></td>
+            <td><select name="" id="valas" onchange="hasilrupiah()">
+                <option value="dolarus">dolarus</option>
+                <option value="dolarsingapure">dolarsingapure</option>
+                <option value="ringgitmalaysia">ringgitmalaysia</option>
+                <option value="yenjepang">yenjepang</option>
+                <option value="euro">euro</option>
+                <option value="riyalarab">riyalarab</option>
+            </select></td>
+            <td><p id="hasil" readonly></p></td>
+        </tr>
+    </table>
+ 
+    
+    <script>
+        function hasilrupiah () {
+            const masukannilai = parseFloat(document.getElementById('masukannilai').value );
+            const valas = document.getElementById('valas').value ;
+
+            const dolarus = 9915;
+            const dolarsingapure = 13472 ;
+            const ringgitmalaysia =874 ;
+            const yenjepang = 120 ;
+            const euro = 15888 ;
+            const riyalarab = 3592;
+
+            console.log(masukannilai);
+            console.log(valas);
+
+            let total = 0 ;
+             if (valas == 'dolarus') {
+                total = masukannilai * dolarus ;
+             }
+             else if (valas == 'dolarsingapure'){
+                total = masukannilai * dolarsingapure ;
+             }
+             else if ( valas == 'ringgitmalaysia'){
+                total =masukannilai * ringgitmalaysia ;
+             }
+             else if (valas == 'yenjepang') {
+                total = masukannilai * yenjepang ;
+             }
+             else if (valas == 'euro') {
+                total =masukannilai * euro ;
+             }
+             else if (valas == 'riyalarab') {
+                total =masukannilai * riyalarab ;
+             }
+
+            document.getElementById ('hasil').textContent = total.toLocaleString('id-ID') + ' Rupiah';
+             
+        }
+    </script>
+</body>
+</html>
