@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body class=" bg-primary">
+    <!-- navbar -->
+    <div class="w-100 " style="position: fixed;top:0%;transition:0,5;z-index:50;">
+        <nav class="navbar navbar-expand-lg bg-primary "  data-bs-theme="dark">
+          <nav class="navbar bg-body-none p-0 ms-5">
+            <div class="container ms-5">
+              <a class="navbar-brand" href="#">
+                <img src="sarana park.png" alt="Bootstrap" width="100" height="max-content">
+              </a>
+            </div>
+          </nav>
+            <div class="container-fluid me-5" >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item me-3">
+                    <a class="nav-link " aria-current="page" href="aboutus.html">HOME</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"> </button>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link " aria-current="page" href="#">BERITA</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"> </button>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link" aria-current="page" href="#">REGISTRASI KENDARAAN</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"> </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+       </div>
+       <!-- form -->
+       <div class="card mx-auto" style="width: max-content;margin-top:150;box-shadow: 0px 4px 8px ;background-color:whitesmoke">
+        <form class="row g-3">
+            <div class="col-auto mt-2 me-2">
+                <div class="col-auto  mx-auto fs-6 bg-primary rounded-bottom mt-1" style="width: max-content;color:white">
+                  <p class="fw-medium">Login to your account</p>
+                </div>
+                <div class="col-auto p-1 ms-2 " style="display: flex;"> 
+                   <div>
+                    <label for="staticEmail2" class="visually-hidden">Email</label>
+                    <input type="text" class="form-control" id="staticemail" placeholder="Email" required>
+                   </div>
+                </div>
+                <div class="col-auto p-1 ms-2" style="display: flex;">
+                    <div>
+                        <label for="inputPassword2" class="visually-hidden">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                    </div>
+                  </div>
+                  <div class="d-grid gap-2 col-auto p-1 ms-2" >
+                    <button type="button" class="btn btn-primary"  onclick="validatelogin()">Login</button>
+                  </div>
+                  <a class="nav-link float-end mt-5" href=""> <small>Forgot your password?</small></a>
+              </div>
+           
+           
+           
+          </form>
+       </div>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+       <script>
+        const validEmail = 'adit123' ;
+        const validPassword = 'adit12345' ;
+        const validEmail2 = 'lusi123';
+        const validPassword2 = 'lusi12345' ;
+        const validEmail3= 'dzakiah123';
+        const validPassword3= 'dzakiah12345' ;
+        const validEmail4 = 'afrizal123';
+        const validPassword4 = 'afrizal12345' ;
+
+    function validatelogin() {
+    const enteredEmail = document.getElementById('staticemail').value ;
+    const enteredPassword = document.getElementById('inputPassword').value ;
+
+     if (enteredEmail === validEmail && enteredPassword === validPassword) {
+        window.location.href= '' ;
+        alert('Login Sukses');
+     }
+        if (enteredEmail === validEmail2 && enteredPassword === validPassword2) {
+            window.location.href= '' ;
+            alert('Login Sukses');
+        }
+            if (enteredEmail === validEmail3 && enteredPassword=== validPassword3) {
+                window.location.href= '' ;
+                alert('Login Sukses');
+            }
+                if (enteredEmail === validEmail4 && enteredPassword === validPassword4) {
+                    window.location.href= '' ;
+                    alert('Login Sukses');
+    } else {
+     alert('Login Gagal');
+    }
+
+    }
+
+   
+       </script>
+</body>
+</html>
